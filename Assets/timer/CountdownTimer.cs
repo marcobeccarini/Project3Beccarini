@@ -8,22 +8,28 @@ public class CountdownTimer : MonoBehaviour
 {
     public float currentTime = 0f;
     public float startingTime = 100f;
+    public GameObject CanvasSim;
+    public GameObject CanvasXR;
+
 
     [SerializeField] Text countdownText;
     private void Start()
     {
         currentTime = startingTime;
-        countdownText.tag = "endReset";
+        
     }
 
     private void Update()
     {
         currentTime -= 1 * Time.deltaTime;
         countdownText.text = currentTime.ToString();
+        
+        if (CanvasSim.tag == "reset" || CanvasXR.tag=="reset" )
+        {
+            currentTime = startingTime;
+            CanvasSim.tag = "EndReset";
+            CanvasXR.tag = "EndReset";
 
-        if (countdownText.tag == "reset")
-        {    currentTime = startingTime;
-            countdownText.tag = "endReset";
         }
     }
 }

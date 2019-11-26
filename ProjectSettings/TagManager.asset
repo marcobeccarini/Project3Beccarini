@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - fly
+  - EndFly
+  - reset
+  - EndReset
+  - FlyDown
+  - BackOn
+  - ambient
   layers:
   - Default
   - TransparentFX
