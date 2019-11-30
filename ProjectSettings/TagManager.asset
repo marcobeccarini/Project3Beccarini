@@ -11,6 +11,8 @@ TagManager:
   - FlyDown
   - BackOn
   - ambient
+  - glow
+  - noGlow
   layers:
   - Default
   - TransparentFX

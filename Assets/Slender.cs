@@ -8,6 +8,11 @@ public class Slender : MonoBehaviour
     public GameObject Light1;
     public GameObject Light2;
     public float LightStep;
+    public GameObject Sword;
+    public GameObject Penny;
+    public GameObject PennyInter;
+    public GameObject Slander;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +27,16 @@ public class Slender : MonoBehaviour
             RenderSettings.ambientLight = new Color(0.3f, 0.3f, 0.3f, 1);
         }
       
-       
+       if (LowerLight.tag == "BackOn")
+        {
+            Light1.GetComponent<Light>().intensity = 1f;
+            Light2.GetComponent<Light>().intensity = 1f;
+            RenderSettings.ambientLight = Color.grey;
+            Sword.SetActive(false);
+            Penny.SetActive(false);
+            PennyInter.SetActive(false);
+            Slander.SetActive(false);
+        }
 
     }
         

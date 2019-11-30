@@ -10,7 +10,7 @@ public class CountdownTimer : MonoBehaviour
     public float startingTime = 100f;
     public GameObject CanvasSim;
     public GameObject CanvasXR;
-
+    public GameObject Audio;
 
     [SerializeField] Text countdownText;
     private void Start()
@@ -31,5 +31,13 @@ public class CountdownTimer : MonoBehaviour
             CanvasXR.tag = "EndReset";
 
         }
+        if (currentTime < 11f)
+            Audio.SetActive(true);
+        if (currentTime < 0f)
+        {
+            CanvasSim.SetActive(false);
+            CanvasXR.SetActive(false);
+        }
+
     }
 }

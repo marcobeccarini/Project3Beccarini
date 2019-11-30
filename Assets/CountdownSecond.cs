@@ -13,6 +13,7 @@ public class CountdownSecond : MonoBehaviour
 
     public GameObject Scaler;
     public GameObject InteractableMaze;
+    public GameObject LowerLight;
 
 
     [SerializeField] Text countdownText;
@@ -31,6 +32,7 @@ public class CountdownSecond : MonoBehaviour
             {
             Scaler.tag = "FlyDown";
             InteractableMaze.tag = "BackOn";
+            LowerLight.tag = "BackOn";
             CanvasSIM.SetActive(false);
             CanvasXR.SetActive(false);
             currentTime = startingTime;

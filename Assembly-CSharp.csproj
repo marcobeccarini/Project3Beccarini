@@ -68,6 +68,7 @@
     <Compile Include="Assets\DafaultScene\ufo.cs" />
     <Compile Include="Assets\Fly.cs" />
     <Compile Include="Assets\FullTiltBoogie\RotateFlareHolder.cs" />
+    <Compile Include="Assets\GlowScript.cs" />
     <Compile Include="Assets\LightsBackOn.cs" />
     <Compile Include="Assets\MazeGeneratorDemo\Scripts\GenerateMaze.cs" />
     <Compile Include="Assets\Mountain Terrain\Misc\CameraDefault.cs" />
@@ -79,11 +80,14 @@
     <Compile Include="Assets\Scaler\SmallScale-DESKTOP-HN6HE6A.cs" />
     <Compile Include="Assets\Scaler\SpiderDeath.cs" />
     <Compile Include="Assets\Slender.cs" />
+    <Compile Include="Assets\SongSimon.cs" />
+    <Compile Include="Assets\SongTest.cs" />
     <Compile Include="Assets\timer\CountdownTimer.cs" />
     <Compile Include="Assets\TouchedWall.cs" />
     <None Include="Assets\ErbGameArt\Procedural fire\Shaders\FireSphere.shader" />
     <None Include="Assets\FullTiltBoogie\Helpers\readme.txt" />
     <None Include="Assets\VRTK\Dependencies\Zinnia.Unity\Dependencies\FodyWeavers.xml" />
+    <None Include="Assets\Blood decal pack\readme.txt" />
     <None Include="Assets\ErbGameArt\Procedural fire\Demo scene\Readme.txt" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/marco/OneDrive/Desktop/Unity/Project3Beccarini/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
